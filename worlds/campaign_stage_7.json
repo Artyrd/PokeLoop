@@ -1,0 +1,73 @@
+{
+  "stage": 7,
+  "width": 13,
+  "height": 12,
+  "rare_items": ["the_one_ring", "anduril_flame_of_the_west", "tree_stump"],
+  "goal-condition": {
+    "goal": "OR",
+    "subgoals": [
+      { "goal": "cycles", "quantity": 100 },
+      {
+        "goal": "AND",
+        "subgoals": [
+          { "goal": "experience", "quantity": 10000 },
+          { "goal": "gold", "quantity": 10000 }
+        ]
+      }
+    ]
+  },
+  "entities": [
+    {"x": 0, "y": 0, "type": "hero_castle"}
+  ],
+  "path": {
+    "type": "path_tile",
+    "x": 0, "y": 0,
+    "path": [
+      "RIGHT", "RIGHT", "RIGHT", "RIGHT", "DOWN", "DOWN", "LEFT", "LEFT",
+      "DOWN", "DOWN", "RIGHT", "RIGHT", "RIGHT", "RIGHT", "UP", "UP", "UP", 
+      "RIGHT", "RIGHT", "DOWN", "DOWN", "DOWN", "RIGHT", "RIGHT", 
+      "UP", "UP", "UP", "UP", "RIGHT", "RIGHT", 
+      "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", 
+      "LEFT", "LEFT", "UP", "LEFT", "LEFT", "LEFT", "LEFT", "LEFT",
+      "DOWN", "DOWN", "DOWN", "RIGHT", "RIGHT", "RIGHT", "RIGHT", "RIGHT", "RIGHT", 
+      "DOWN", "DOWN", "LEFT", "LEFT", "LEFT", "LEFT", "LEFT", "LEFT", "LEFT", "LEFT",
+      "UP", "UP", "UP", "LEFT", "LEFT", "LEFT",
+      "UP", "UP", "UP", "UP", "UP", "UP", "UP", "UP"
+    ]
+  },
+  "stage_boss": {
+    "boss_name": "Blaine",
+    "boss_image": "src/images/stage_boss_images/blaine.png",
+    "boss_battle_image": "src/images/stage_boss_images/blaine_battle.gif",
+    "battle_status": "Burned",
+    "boss_stats": {
+      "hp": 300,
+      "atk": 30,
+      "def": 10,
+      "gold": 777,
+      "xp": 777
+    },
+    "pet_name": "Moltres",
+    "pet_image": "src/images/stage_boss_images/moltres.gif",
+    "pet_battle_image": "src/images/stage_boss_images/moltres_battle.gif",
+    "pet_stats": {
+      "hp": 1500,
+      "atk": 50,
+      "def": 10
+    },
+    "card_image": "src/images/stage_boss_images/volcano_badge.png",
+    "building_image": "src/images/stage_boss_images/gym_building_7.png",
+    "challenge-condition": {
+      "goal": "OR",
+      "subgoals": [
+        { "goal": "cycles", "quantity": 100 },
+        { "goal": "AND",
+          "subgoals": [
+            { "goal": "experience", "quantity": 10000 },
+            { "goal": "gold", "quantity": 1000 }
+          ]
+        }
+      ]
+    }
+  }
+}

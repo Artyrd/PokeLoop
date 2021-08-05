@@ -1,0 +1,56 @@
+{
+  "stage": 6,
+  "width": 12,
+  "height": 18,
+  "rare_items": ["the_one_ring", "anduril_flame_of_the_west", "tree_stump"],
+  "goal-condition": {
+    "goal": "OR",
+    "subgoals": [
+      { "goal": "cycles", "quantity": 60 },
+      { "goal": "gold", "quantity": 6000 }
+    ]
+  },
+  "entities": [
+    {"x": 0, "y": 0, "type": "hero_castle"}
+  ],
+  "path": {
+    "type": "path_tile",
+    "x": 0, "y": 0,
+    "path": [
+      "RIGHT", "RIGHT", "RIGHT", "RIGHT", "RIGHT", "RIGHT", "RIGHT", "RIGHT", "RIGHT", "RIGHT", "RIGHT", 
+      "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", 
+      "LEFT", "LEFT", "LEFT", "LEFT", "LEFT", "LEFT",  "LEFT",
+      "UP", "UP", "UP", "UP", "UP", "UP", "UP", "UP", "UP", "UP", "UP", "UP",
+      "RIGHT", "RIGHT", "RIGHT", "DOWN", "DOWN", "DOWN", "DOWN", "LEFT", "DOWN", "DOWN", "DOWN", 
+      "RIGHT", "RIGHT", "RIGHT", "UP", "UP", "UP", "UP", "UP", "UP", "UP", "UP", "UP",
+      "LEFT", "LEFT", "LEFT", "LEFT", "LEFT", "LEFT",  "LEFT",
+      "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", 
+      "LEFT", "LEFT", "UP", "UP", "UP", "UP", "UP", "UP", "UP", "UP", "UP", "UP", "UP", "UP", "UP", "UP", "UP", "UP"
+    ]
+  },
+  "stage_boss": {
+    "boss_name": "Sabrina",
+    "boss_image": "src/images/stage_boss_images/sabrina.png",
+    "boss_battle_image": "src/images/stage_boss_images/sabrina_battle.gif",
+    "battle_status": "Confused",
+    "boss_stats": {
+      "hp": 300,
+      "atk": 15,
+      "def": 5,
+      "gold": 666,
+      "xp": 666
+    },
+    "pet_name": "Alakazam",
+    "pet_image": "src/images/stage_boss_images/alakazam.gif",
+    "pet_battle_image": "src/images/stage_boss_images/alakazam_battle.gif",
+    "pet_stats": {
+      "hp": 666,
+      "atk": 66,
+      "def": 10
+    },
+    "card_image": "src/images/stage_boss_images/marsh_badge.png",
+    "building_image": "src/images/stage_boss_images/gym_building_6.png",
+    "challenge-condition":
+      { "goal": "bosses" }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "stage": 8,
+  "width": 10,
+  "height": 19,
+  "rare_items": ["the_one_ring", "anduril_flame_of_the_west", "tree_stump"],
+  "goal-condition": {
+    "goal": "AND",
+    "subgoals": [
+      { "goal": "cycles", "quantity": 100 },
+      {
+        "goal": "AND",
+        "subgoals": [
+          { "goal": "experience", "quantity": 10000 },
+          { "goal": "gold", "quantity": 50000 }
+        ]
+      }
+    ]
+  },
+  "entities": [
+    {"x": 0, "y": 0, "type": "hero_castle"}
+  ],
+  "path": {
+    "type": "path_tile",
+    "x": 0, "y": 0,
+    "path": [
+      "RIGHT", "RIGHT", "RIGHT", "DOWN", "DOWN", "RIGHT", "RIGHT", "UP", "RIGHT", "RIGHT", "RIGHT",
+      "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "RIGHT", "DOWN", "DOWN", "DOWN",
+      "LEFT", "LEFT", "LEFT", "LEFT", "UP", "UP", "RIGHT",
+      "UP", "UP", "UP", "UP", "LEFT", "LEFT", "LEFT",
+      "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN",
+      "RIGHT", "RIGHT", "RIGHT", "RIGHT", "RIGHT", "DOWN", "DOWN", "RIGHT", "DOWN", "DOWN",
+      "LEFT", "LEFT", "LEFT", "LEFT", "LEFT", "LEFT", "LEFT", "LEFT", "LEFT",
+      "UP", "UP", "UP", "UP", "UP", "UP", "RIGHT", "UP", "UP", "UP", "UP", "LEFT", "UP", "UP", "UP", "UP", "UP", "UP", "UP", "UP"
+    ]
+  },
+  "stage_boss": {
+    "boss_name": "Blue",
+    "boss_image": "src/images/stage_boss_images/blue.png",
+    "boss_battle_image": "src/images/stage_boss_images/blue_battle.gif",
+    "battle_status": "Frozen",
+    "boss_stats": {
+      "hp": 500,
+      "atk": 50,
+      "def": 15,
+      "gold": 888,
+      "xp": 888
+    },
+    "pet_name": "Blastoise",
+    "pet_image": "src/images/stage_boss_images/blastoise.gif",
+    "pet_battle_image": "src/images/stage_boss_images/blastoise_battle.gif",
+    "pet_stats": {
+      "hp": 2000,
+      "atk": 50,
+      "def": 25
+    },
+    "card_image": "src/images/stage_boss_images/earth_badge.png",
+    "building_image": "src/images/stage_boss_images/gym_building_8.png",
+    "challenge-condition": {
+      "goal": "AND",
+      "subgoals": [
+        { "goal": "bosses" },
+        { "goal": "gold", "quantity": 9999 }]
+    }
+  }
+}

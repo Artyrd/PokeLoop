@@ -1,0 +1,47 @@
+{
+  "stage": 2,
+  "width": 11,
+  "height": 15,
+  "rare_items": ["the_one_ring"],
+  "goal-condition": {"goal": "cycles", "quantity": 10 },
+  "entities": [
+    {"x": 0, "y": 0, "type": "hero_castle"}
+  ],
+  "path": {
+    "type": "path_tile",
+    "x": 0, "y": 0,
+    "path": [
+      "RIGHT", "RIGHT", "RIGHT", "RIGHT", "RIGHT", "RIGHT", "RIGHT", "RIGHT", "RIGHT", "RIGHT",
+      "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN",
+      "LEFT", "LEFT", "UP", "UP", "UP", "UP", 
+      "LEFT", "LEFT", "DOWN", "DOWN", "DOWN", "DOWN",
+      "LEFT", "LEFT", "UP", "UP", "UP", "UP", 
+      "LEFT", "LEFT", "DOWN", "DOWN", "DOWN", "DOWN",
+      "LEFT", "LEFT", "UP", "UP", "UP", "UP", "UP", "UP"
+    ]
+  },
+  "stage_boss": {
+    "boss_name": "Misty",
+    "boss_image": "src/images/stage_boss_images/misty.png",
+    "boss_battle_image": "src/images/stage_boss_images/misty_battle.gif",
+    "battle_status": "",
+    "boss_stats": {
+      "hp": 100,
+      "atk": 12,
+      "def": 1,
+      "gold": 222,
+      "xp": 222
+    },
+    "pet_name": "Starmie",
+    "pet_image": "src/images/stage_boss_images/starmie.gif",
+    "pet_battle_image": "src/images/stage_boss_images/starmie_battle.gif",
+    "pet_stats": {
+      "hp": 120,
+      "atk": 30,
+      "def": 4
+    },
+    "card_image": "src/images/stage_boss_images/cascade_badge.png",
+    "building_image": "src/images/stage_boss_images/gym_building_2.png",
+    "challenge-condition": { "goal": "gold", "quantity": 400 }
+  }
+}

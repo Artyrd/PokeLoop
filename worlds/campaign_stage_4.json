@@ -1,0 +1,54 @@
+{
+  "stage": 4,
+  "width": 8,
+  "height": 14,
+  "rare_items": ["the_one_ring", "anduril_flame_of_the_west", "tree_stump"],
+  "goal-condition": {
+    "goal": "OR",
+    "subgoals": [
+      { "goal": "cycles", "quantity": 15 },
+      { "goal": "experience", "quantity": 1000 }
+    ]
+  },
+  "entities": [
+    {"x": 0, "y": 0, "type": "hero_castle"}
+  ],
+  "path": {
+    "type": "path_tile",
+    "x": 0, "y": 0,
+    "path": [
+      "RIGHT", "RIGHT", "DOWN", "RIGHT", "RIGHT", "UP", "RIGHT", "RIGHT", "RIGHT",
+      "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN",
+      "LEFT", "LEFT", "LEFT", "UP", "UP", "RIGHT",
+      "UP", "UP", "UP", "UP", "LEFT", "LEFT", "LEFT",
+      "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN",
+      "RIGHT", "RIGHT", "RIGHT", "RIGHT", "RIGHT", "DOWN", "DOWN",
+      "LEFT", "LEFT", "LEFT", "LEFT", "LEFT", "LEFT", "LEFT",
+      "UP", "UP", "UP", "UP", "UP", "UP", "UP", "UP", "UP", "UP", "UP", "UP", "UP"
+    ]
+  },
+  "stage_boss": {
+    "boss_name": "Erika",
+    "boss_image": "src/images/stage_boss_images/erika.png",
+    "boss_battle_image": "src/images/stage_boss_images/erika_battle.gif",
+    "battle_status": "Sleeping",
+    "boss_stats": {
+      "hp": 100,
+      "atk": 15,
+      "def": 5,
+      "gold": 444,
+      "xp": 444
+    },
+    "pet_name": "Vileplume",
+    "pet_image": "src/images/stage_boss_images/vileplume.gif",
+    "pet_battle_image": "src/images/stage_boss_images/vileplume_battle.gif",
+    "pet_stats": {
+      "hp": 300,
+      "atk": 20,
+      "def": 5
+    },
+    "card_image": "src/images/stage_boss_images/rainbow_badge.png",
+    "building_image": "src/images/stage_boss_images/gym_building_4.png",
+    "challenge-condition": { "goal": "gold", "quantity": 300 }
+  }
+}

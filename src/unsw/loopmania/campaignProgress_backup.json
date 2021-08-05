@@ -1,0 +1,14 @@
+{
+  "curr_level": 1,
+  "worlds": 
+    {
+      "1": "campaign_stage_1.json",
+      "2": "campaign_stage_2.json",
+      "3": "campaign_stage_3.json",
+      "4": "campaign_stage_4.json",
+      "5": "campaign_stage_5.json",
+      "6": "campaign_stage_6.json",
+      "7": "campaign_stage_7.json",
+      "8": "campaign_stage_8.json"
+    }
+}

@@ -1,0 +1,34 @@
+{
+  "width": 10,
+  "height": 19,
+  "rare_items": [],
+  "goal-condition": {
+    "goal": "OR", 
+    "subgoals": [
+      {"goal": "gold", "quantity": 10000},
+      {"goal": "AND",
+        "subgoals": [
+          {"goal": "cycles", "quantity": 20},
+          {"goal": "experience", "quantity": 4444}
+        ]
+      }
+    ]
+  },
+  "entities": [
+    {"x": 0, "y": 0, "type": "hero_castle"}
+  ],
+  "path": {
+    "type": "path_tile",
+    "x": 0, "y": 0,
+    "path": [
+      "RIGHT", "RIGHT", "RIGHT", "DOWN", "DOWN", "RIGHT", "RIGHT", "UP", "RIGHT", "RIGHT", "RIGHT",
+      "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "RIGHT", "DOWN", "DOWN", "DOWN",
+      "LEFT", "LEFT", "LEFT", "LEFT", "UP", "UP", "RIGHT",
+      "UP", "UP", "UP", "UP", "LEFT", "LEFT", "LEFT",
+      "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN",
+      "RIGHT", "RIGHT", "RIGHT", "RIGHT", "RIGHT", "DOWN", "DOWN", "RIGHT", "DOWN", "DOWN",
+      "LEFT", "LEFT", "LEFT", "LEFT", "LEFT", "LEFT", "LEFT", "LEFT", "LEFT",
+      "UP", "UP", "UP", "UP", "UP", "UP", "RIGHT", "UP", "UP", "UP", "UP", "LEFT", "UP", "UP", "UP", "UP", "UP", "UP", "UP", "UP"
+    ]
+  }
+}

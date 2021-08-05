@@ -1,0 +1,48 @@
+{
+  "stage": 3,
+  "width": 11,
+  "height": 14,
+  "rare_items": ["the_one_ring", "tree_stump"],
+  "goal-condition": {"goal": "gold", "quantity": 500 },
+  "entities": [
+    {"x": 0, "y": 0, "type": "hero_castle"}
+  ],
+  "path": {
+    "type": "path_tile",
+    "x": 0, "y": 0,
+    "path": [
+      "RIGHT", "RIGHT", "RIGHT", "RIGHT", "DOWN", "DOWN", "DOWN",
+      "LEFT", "LEFT", "DOWN", "DOWN", "RIGHT","RIGHT",
+      "DOWN", "DOWN", "DOWN", "RIGHT", "RIGHT", "UP", "UP", "UP",
+      "RIGHT", "RIGHT", "UP", "UP", "LEFT", "LEFT",
+      "UP", "UP", "UP", "RIGHT", "RIGHT", "RIGHT", "RIGHT",
+      "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN",
+      "LEFT", "LEFT", "LEFT", "LEFT", "LEFT", "LEFT", "LEFT", "LEFT", "LEFT", "LEFT", 
+      "UP", "UP", "UP", "UP", "UP", "UP", "UP", "UP", "UP", "UP"
+    ]
+  },
+  "stage_boss": {
+    "boss_name": "Lt. Surge",
+    "boss_image": "src/images/stage_boss_images/lt_surge.png",
+    "boss_battle_image": "src/images/stage_boss_images/lt_surge_battle.gif",
+    "battle_status": "Paralysed",
+    "boss_stats": {
+      "hp": 120,
+      "atk": 15,
+      "def": 2,
+      "gold": 333,
+      "xp": 333
+    },
+    "pet_name": "Raichu",
+    "pet_image": "src/images/stage_boss_images/raichu.gif",
+    "pet_battle_image": "src/images/stage_boss_images/raichu_battle.gif",
+    "pet_stats": {
+      "hp": 200,
+      "atk": 20,
+      "def": 5
+    },
+    "card_image": "src/images/stage_boss_images/thunder_badge.png",
+    "building_image": "src/images/stage_boss_images/gym_building_3.png",
+    "challenge-condition": { "goal": "experience", "quantity": 1000 }
+  }
+}

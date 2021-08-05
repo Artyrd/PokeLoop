@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<Pane fx:id="root" maxHeight="240.0" maxWidth="360.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unsw.loopmania.battle.BattleController">
+   <children>
+      <StackPane fx:id="baseStack" maxHeight="240.0" maxWidth="360.0" prefHeight="240.0" prefWidth="360.0">
+         <children>
+            <StackPane fx:id="friendlies" maxHeight="150.0" maxWidth="360.0" prefHeight="150.0" prefWidth="360.0" StackPane.alignment="BOTTOM_CENTER" />
+            <StackPane fx:id="enemies" maxHeight="150.0" maxWidth="360.0" prefHeight="150.0" prefWidth="360.0" StackPane.alignment="TOP_CENTER" />
+         </children>
+      </StackPane>
+   </children>
+</Pane>

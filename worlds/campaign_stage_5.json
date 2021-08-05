@@ -1,0 +1,58 @@
+{
+  "stage": 5,
+  "width": 8,
+  "height": 17,
+  "rare_items": ["the_one_ring", "anduril_flame_of_the_west", "tree_stump"],
+  "goal-condition": {
+    "goal": "AND",
+    "subgoals": [
+      { "goal": "cycles", "quantity": 40 },
+      { "goal": "gold", "quantity": 2000 }]
+  },
+  "entities": [
+    {"x": 0, "y": 0, "type": "hero_castle"}
+  ],
+  "path": {
+    "type": "path_tile",
+    "x": 0, "y": 0,
+    "path": [
+      "RIGHT", "RIGHT", "RIGHT", "RIGHT", "RIGHT", "RIGHT", "RIGHT", 
+      "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN",
+      "LEFT", "LEFT", "LEFT", "DOWN", "DOWN", "RIGHT", "RIGHT", "RIGHT", 
+      "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN", "DOWN",
+      "LEFT", "LEFT", "LEFT", "LEFT", "LEFT", "LEFT", "LEFT",
+      "UP", "UP", "UP", "UP", "UP", "UP", "UP",
+      "RIGHT", "RIGHT", "RIGHT", "UP", "UP", "LEFT", "LEFT", "LEFT", 
+      "UP", "UP", "UP", "UP", "UP", "UP", "UP"
+    ]
+  },
+  "stage_boss": {
+    "boss_name": "Koga",
+    "boss_image": "src/images/stage_boss_images/koga.png",
+    "boss_battle_image": "src/images/stage_boss_images/koga_battle.gif",
+    "battle_status": "Poisoned",
+    "boss_stats": {
+      "hp": 100,
+      "atk": 25,
+      "def": 2,
+      "gold": 555,
+      "xp": 555
+    },
+    "pet_name": "Nidoking",
+    "pet_image": "src/images/stage_boss_images/nidoking.gif",
+    "pet_battle_image": "src/images/stage_boss_images/nidoking_battle.gif",
+    "pet_stats": {
+      "hp": 500,
+      "atk": 40,
+      "def": 10
+    },
+    "card_image": "src/images/stage_boss_images/soul_badge.png",
+    "building_image": "src/images/stage_boss_images/gym_building_5.png",
+    "challenge-condition": {
+      "goal": "OR",
+      "subgoals": [
+        { "goal": "experience", "quantity": 5000 },
+        { "goal": "gold", "quantity": 1000 }]
+    }
+  }
+}
