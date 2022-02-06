@@ -1,3 +1,5 @@
-# COMP2511 Major Project: Loop Mania
+# Pokeloop
 
-[**Link to specification**](https://gitlab.cse.unsw.edu.au/COMP2511/21T2/project-specification)
+## A pokemon themed Parody game of Loop Mania
+
+Created in Java
